@@ -24,6 +24,7 @@ mockk = "1.14.11"
 navigation3 = "2.11.0"
 navigation3Material = "1.2.1"
 timber = "5.0.1"
+vanniktechMavenPublish = "0.37.0"
 
 # SDK and toolchain configuration (accessed via type-safe accessors in build scripts)
 compileSdk = "37"
@@ -86,3 +87,4 @@ android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+vanniktech-maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "vanniktechMavenPublish" }

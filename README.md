@@ -72,18 +72,16 @@ The demo app has a navigation drawer with these screens:
 
 ## Getting started
 
-FLX is not yet published to a Maven repository. To use it, include the `flx` module in your
-Gradle project:
+FLX is published on Maven Central. Add the dependency to your module's `build.gradle.kts`:
 
 ```kotlin
-// settings.gradle.kts
-include(":flx")
-
-// app/build.gradle.kts
 dependencies {
-    implementation(project(":flx"))
+    implementation("org.fuusio.flx:flx:2.0.0")
 }
 ```
+
+Make sure `mavenCentral()` is among your repositories. FLX requires Android API level 29 or
+higher.
 
 ### Evaluate FLX code
 
@@ -142,6 +140,11 @@ Requirements:
 ./gradlew :app:assembleDebug        # build the demo app
 ./gradlew :flx:testDebugUnitTest    # run the library's unit tests
 ```
+
+## Releasing
+
+See [RELEASING.md](RELEASING.md) for how the library is published, and
+[CHANGELOG.md](CHANGELOG.md) for what changed in each version.
 
 ## Contributing
 

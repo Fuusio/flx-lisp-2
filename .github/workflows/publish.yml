@@ -1,0 +1,40 @@
+name: Publish to Maven Central
+
+# Runs when a GitHub release is published. Tag the release as v<VERSION_NAME>, e.g. v2.0.0.
+on:
+  release:
+    types: [ published ]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Check that the tag matches VERSION_NAME
+        if: github.event_name == 'release'
+        run: |
+          VERSION=$(grep '^VERSION_NAME=' gradle.properties | cut -d= -f2)
+          if [ "${GITHUB_REF_NAME}" != "v${VERSION}" ]; then
+            echo "Tag ${GITHUB_REF_NAME} does not match VERSION_NAME ${VERSION}"; exit 1
+          fi
+
+      - name: Test
+        run: ./gradlew :flx:testDebugUnitTest
+
+      - name: Publish and release
+        run: ./gradlew :flx:publishAndReleaseToMavenCentral --no-configuration-cache
+        env:
+          ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
+          ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
+          ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.SIGNING_KEY }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyId: ${{ secrets.SIGNING_KEY_ID }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.SIGNING_KEY_PASSWORD }}

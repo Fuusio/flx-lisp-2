@@ -65,6 +65,7 @@ open class FlxVM(val ctx: Ctx) {
         runWithStack(stackSize) { eval(expression) }
 
     /** Guards [executionState] while paused: [canContinue] waits on it until resumed or stopped. */
+    @Suppress("PLATFORM_CLASS_MAPPED_TO_KOTLIN")
     private val pauseLock = Object()
 
     /**

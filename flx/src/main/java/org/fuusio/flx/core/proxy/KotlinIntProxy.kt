@@ -270,7 +270,7 @@ object KotlinIntProxy : ClassProxy<Int>(Int::class) {
         },
         TO_INT("toInt", Int::class, false) {
             override fun invoke(invokee: Int, args: Array<out Any>): Any {
-                return invokee.toInt()
+                return invokee
             }
         },
         TO_LONG("toLong", Long::class, false) {

@@ -104,7 +104,7 @@ class CollectionSharingTest : FlxUnitTest() {
         @Test
         fun `array converted to a list is independent of it`() {
             val array = array(1L, 2L) as ImmutableArray
-            val list = array.toList() as ImmutableList
+            val list = array.toList()
             array.add(3L)
             list.add(4L)
             assertEquals(array(1L, 2L, 3L), array)
