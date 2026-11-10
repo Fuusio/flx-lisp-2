@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId = "org.fuusio.flx.app"
-        minSdk = libs.versions.minSdk.get().toInt()
+        minSdk = libs.versions.appMinSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0.0"

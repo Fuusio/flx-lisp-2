@@ -133,7 +133,7 @@ is a complete example.
 
 Requirements:
 
-- Android Studio with the Android SDK (compile SDK 37, min SDK 29)
+- Android Studio with the Android SDK (compile SDK 37; min SDK 29 for the library, 33 for the demo app)
 - JDK 21
 
 ```bash
@@ -149,7 +149,7 @@ See [RELEASING.md](RELEASING.md) for how the library is published, and
 ## Contributing
 
 Issues and pull requests are welcome at
-[github.com/Fuusio/flx-lisp](https://github.com/Fuusio/flx-lisp).
+[github.com/Fuusio/flx-lisp-2](https://github.com/Fuusio/flx-lisp-2).
 
 ## License
 

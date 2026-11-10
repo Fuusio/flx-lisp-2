@@ -30,7 +30,9 @@ vanniktechMavenPublish = "0.37.0"
 compileSdk = "37"
 javaCompatibility = "21"
 kotlinJvmTarget = "21"
-minSdk = "33"
+minSdk = "29"
+# The demo app uses Kide, which requires API level 33.
+appMinSdk = "33"
 targetSdk = "37"
 
 [libraries]

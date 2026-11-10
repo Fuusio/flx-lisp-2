@@ -9,9 +9,11 @@ Coordinates: `org.fuusio.flx:flx:<VERSION_NAME>`. The group and version are set 
 
 ## One-time setup
 
-1. **Namespace.** In the Central Portal, make sure the `org.fuusio` namespace is verified for your
-   account (it is verified by a DNS TXT record on `fuusio.org`). Verifying `org.fuusio` also
-   covers `org.fuusio.flx`.
+1. **Namespace.** FLX is published under the group `org.fuusio.flx`, which must be covered by a
+   namespace verified for your account in the Central Portal (*Namespaces*). A verified
+   `org.fuusio` covers it, but a verified `org.fuusio.kide` (Kide's) does not: in that case add
+   `org.fuusio.flx` as a new namespace and verify it with a DNS TXT record on `fuusio.org`, as was
+   done for Kide.
 2. **User token.** In the Central Portal, generate a user token (*View Account → Generate User
    Token*). It gives a username and a password.
 3. **Signing key.** Maven Central requires signed artifacts. Create a GPG key and publish its

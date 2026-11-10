@@ -8,7 +8,7 @@ package org.fuusio.flx.app
  */
 object FlxLinks {
 
-    const val GITHUB_LABEL = "github.com/Fuusio/flx-lisp"
+    const val GITHUB_LABEL = "github.com/Fuusio/flx-lisp-2"
     const val GITHUB_URL = "https://$GITHUB_LABEL"
 
     const val SUPPORT_EMAIL = "fuusio.app@gmail.com"

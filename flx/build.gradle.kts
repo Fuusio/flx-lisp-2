@@ -69,7 +69,7 @@ mavenPublishing {
         name.set("FLX Lisp")
         description.set("A small, embeddable Lisp for Kotlin and Android.")
         inceptionYear.set("2016")
-        url.set("https://github.com/Fuusio/flx-lisp")
+        url.set("https://github.com/Fuusio/flx-lisp-2")
         licenses {
             license {
                 name.set("The Apache License, Version 2.0")
@@ -85,9 +85,9 @@ mavenPublishing {
             }
         }
         scm {
-            url.set("https://github.com/Fuusio/flx-lisp")
-            connection.set("scm:git:git://github.com/Fuusio/flx-lisp.git")
-            developerConnection.set("scm:git:ssh://git@github.com/Fuusio/flx-lisp.git")
+            url.set("https://github.com/Fuusio/flx-lisp-2")
+            connection.set("scm:git:git://github.com/Fuusio/flx-lisp-2.git")
+            developerConnection.set("scm:git:ssh://git@github.com/Fuusio/flx-lisp-2.git")
         }
     }
 }

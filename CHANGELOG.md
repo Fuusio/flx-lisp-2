@@ -13,4 +13,4 @@ First public release on Maven Central as `org.fuusio.flx:flx`.
 - Functions, closures, `loop`/`recur`, threading macros, `try`/`catch` and objects.
 - No reflection: FLX programs cannot load classes or call Java methods that FLX does not define.
 
-[2.0.0]: https://github.com/Fuusio/flx-lisp/releases/tag/v2.0.0
+[2.0.0]: https://github.com/Fuusio/flx-lisp-2/releases/tag/v2.0.0
