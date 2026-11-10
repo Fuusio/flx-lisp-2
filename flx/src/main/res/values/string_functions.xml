@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="desc_noop">Do nothing.</string>
+
+    <string name="desc_object__is">Tests if the given **`instance`** is an instance of the specified `Object`. The `Object is specified by the given  **`object`**.</string>
+
+    <string name="desc_control_flow_return">Returns from executing the current code block without returning any value.</string>
+
+    <string name="desc_control_flow_return_value">Returns from executing the current code block and return the optional **`value`**.</string>
+
+    <string name="desc_number__has_decimals">Tests if the given **`number`** has decimals.</string>
+
+    <string name="desc_number__is_whole_number">Tests if the given **`number`** is a whole number i.e. a number that does not have decimals.</string>
+
+    <string name="desc_calculator_new">Creates a new instance of `Calculator`.</string>
+
+    <string name="desc_calculator__decimal_point">Adds a decimal point (.) to the number inputted for given **`calculator`**.</string>
+
+    <string name="desc_calculator__operand1">Gets the current first operand for given **`calculator`**. Returns the first operand as a `Double` or `Null` if there is no first operand at the moment.</string>
+
+    <string name="desc_calculator__operand2">Gets the current second operand for given **`calculator`**. Returns the second operand as a `Double` or `Null` if there is no second operand at the moment.</string>
+
+    <string name="desc_calculator__operator">Gets the current operator for given **`calculator`**. Returns the operator as a `String` or `Null` if there is no operator at the moment.</string>
+
+    <string name="desc_calculator__enter">Inputs the enter action, i.e. calculator button [=], to the given **`calculator`**.</string>
+
+    <string name="desc_calculator__clear">Inputs the clear action, i.e. calculator button [C], to the given **`calculator`**.</string>
+
+    <string name="desc_calculator__clear_entry">Inputs the clear entry action, i.e. calculator button [CE], to the given **`calculator`**.</string>
+
+    <string name="desc_calculator__addition">Inputs the addition operation , i.e. calculator button [+], to the given **`calculator`**.</string>
+
+    <string name="desc_calculator__subtraction">Inputs the addition operation, i.e. calculator button [-], to the given **`calculator`**.</string>
+
+    <string name="desc_calculator__multiplication">Inputs the multiplication operation, i.e. calculator button [*], to the given **`calculator`**.</string>
+
+    <string name="desc_calculator__division">Inputs the division operation, i.e. calculator button [/], to the given **`calculator`**.</string>
+
+    <string name="desc_calculator__percentage">Inputs the percentage operation, i.e. calculator button [%], to the given **`calculator`**.</string>
+
+    <string name="desc_calculator__digit">Inputs the given *`digit`**, i.e. calculator buttons [0]…[9], to the given **`calculator`**.</string>
+
+    <string name="desc_calculator__toggleSign">Toggles the positive to negative or negative number to positive in the given **`calculator`**.</string>
+
+
+
+
+    <string name="desc_any__get_class_name">Returns the fully qualified Java class name for the given **`object`**.</string>
+
+    <string name="desc_is_instance">Checks if the given **`object`** is an instance of the Java `Class` specified by **`class`** object.</string>
+
+    <string name="desc_log_d">Creates a log entry at debug level with **`message`**.</string>
+    <string name="desc_log_i">Creates a log entry at info level with **`message`**.</string>
+    <string name="desc_log_w">Creates a log entry at warning level with **`message`**.</string>
+    <string name="desc_log_e">Creates a log entry at error level with **`message`**.</string>
+
+    <string name="desc_addition">Addition of the given **`number`** arguments.</string>
+
+    <string name="desc_percentage">Calculates the proportionate part of the given **`total`** numeric value specified by the given **`percentage`**.</string>
+
+    <string name="desc_division">Division of the given **`number`** arguments.</string>
+
+    <string name="desc_max">Return the maximum **`number`** among the given **`number`** arguments.</string>
+
+    <string name="desc_min">Return the minimum **`number`** among the given **`number`** arguments.</string>
+
+    <string name="desc_multiplication">Multiplication of the given **`number`** arguments.</string>
+
+    <string name="desc_subtraction">Subtraction of the given **`number`** arguments.</string>
+
+    <string name="desc_equals">Tests if all the given **`object`** arguments are equal to each other.</string>
+
+    <string name="desc_greater_than">Returns `true` if  **`number`** values are in monotonically decreasing order, otherwise `false`.</string>
+
+    <string name="desc_rem">Remainder of dividing the first **`number`** by the **`divider`**.</string>
+
+    <string name="desc_greater_than_or_equal">Returns `true` if **`number`** values are in monotonically non-increasing order, otherwise `false`.</string>
+
+    <string name="desc_lesser_than">Returns `true` if  **`number`** values are in monotonically increasing order, otherwise `false`.</string>
+
+
+
+
+
+    <string name="desc_lesser_than_or_equal">Returns `true` if **`number`** values are in monotonically non-decreasing order, otherwise `false`.</string>
+
+    <string name="desc_equal">Tests if all the given **`number`** values are equal.</string>
+
+    <string name="desc_abs">Returns absolute value of number **`x`**.</string>
+
+    <string name="desc_acos">Returns the acos of **`x`**.</string>
+
+    <string name="desc_asin">Returns the asin of **`x`**.</string>
+
+    <string name="desc_atan">Returns the atan of **`x`**.</string>
+
+    <string name="desc_ceil">Returns the least integer greater than or equal to **`x`**.</string>
+
+    <string name="desc_compare">Returns a negative number, zero, or a positive number when **`string1`** is logically (less than), (equal to), or (greater than) **`string2`**.</string>
+
+    <string name="desc_color">Returns a `Color` defined by given **`red`**, **`green`**, **`blue`** and optional **`alpha`** component values. Each component value has to be in range [0..255].</string>
+
+    <string name="desc_cos">Returns the cos of **`x`**.</string>
+
+    <string name="desc_number__dec">Returns a value that is **`number`** decreased by 1.</string>
+
+    <string name="number__desc_inc">Returns a value that is **`number`** increased by 1.</string>
+
+    <string name="desc_identical">Tests if **`form1`** and **`form2`** are the same object.</string>
+
+    <string name="desc_exp">Computes Euler\'s number **e** raised to the power of the value **`x`**.</string>
+
+    <string name="desc_floor">Returns the next lowest integer value, i.e., the last largest integer not greater than the **`x`** value, by rounding up value if necessary.</string>
+
+    <string name="desc_eval">Evaluates the given **`object`** and returns the evaluated value.</string>
+
+    <string name="desc_eval_string">Evaluates the given **`string`**. The **`string`** is first parsed to a form which is then evaluated.</string>
+
+    <string name="desc_number__pow">Raises **`x`** value to the power **`y`**.</string>
+
+    <string name="desc_string__parse_boolean">Parses the given **`string`** to a `Boolean` value. Returns `Null` if parsing fails.</string>
+
+    <string name="desc_string__parse_byte">Parses the given **`string`** to a `Byte` value. Returns `Null` if parsing fails.</string>
+
+    <string name="desc_string__parse_double">Parses the given **`string`** to a `Double` value. Returns `Null` if parsing fails.</string>
+
+    <string name="desc_string__parse_float">Parses the given **`string`** to a `Float` value. Returns `Null` if parsing fails.</string>
+
+    <string name="desc_string__parse_int">Parses the given **`string`** to an `Int` value. Returns `Null` if parsing fails.</string>
+
+    <string name="desc_string__parse_long">Parses the given **`string`** to a `Long` value. Returns `Null` if parsing fails.</string>
+
+    <string name="desc_string__parse_short">Parses the given **`string`** to a `Short` value. Returns `Null` if parsing fails.</string>
+
+    <string name="desc_round">Rounds the given value **`x`** towards the closest integer with ties rounded towards even integer.</string>
+
+    <string name="desc_sin">Returns the sin of **`x`**.</string>
+
+    <string name="desc_sqrt">Returns the square root of **`x`**.</string>
+
+    <string name="desc_any__is_array">Test if the given **`object`** is an `Array`.</string>
+
+    <string name="desc_string__is_blank">Returns true if the given **`string`** is empty or consists solely of whitespace characters.</string>
+
+    <string name="desc_string__plus">Returns a `String` obtained by concatenating the given **`string`** with the string representation of the given **`any`** object.</string>
+
+    <string name="desc_array__add">Adds the given **`item`** to the given **`array`** (an `Array`). Returns a `Boolean` value indicating if adding succeeded.</string>
+
+    <string name="desc_list__add">Adds the given **`item`** to the given **`list`** (a `List`). Returns a `Boolean` value indicating if adding succeeded.</string>
+
+    <string name="desc_set__add">Adds the given **`item`** to the given **`set`** (a `Set`). Returns a `Boolean` value indicating if adding succeeded.</string>
+
+    <string name="desc_array__add_all">Adds all the **`items`** (an `Collection`) to the given **`array`** (an `Array`). Returns the **`array`**.</string>
+
+    <string name="desc_list__add_all">Adds all the **`items`** (a `Collection`) to the given **`list`** (a `List`). Returns the **`list`**.</string>
+
+    <string name="desc_set__add_all">Adds all the **`items`** (a `Collection`) to the given **`set`** (a `Set`). Returns the **`set`**.</string>
+
+    <string name="desc_collection__clear">Clears all the items from the given **`collection`** (a `Collection`).</string>
+
+    <string name="desc_collection__is_empty">Checks if the given **`collection`** (a `Collection`) is empty. Returns a **`Boolean`**.</string>
+
+    <string name="desc_collection__is_not_empty">Checks if the given **`collection`** (a `Collection`) is not empty. Returns a **`Boolean`**.</string>
+
+    <string name="desc_array__clear">Clears all the items from the given **`array`** (an `Array`). Returns the **`array`**.</string>
+
+    <string name="desc_list__clear">Clears all the items from the given **`list`** (a `List`). Returns the **`list`**.</string>
+
+    <string name="desc_set__clear">Clears all the items from the given **`set`** (a `Set`). Returns the **`set`**.</string>
+
+    <string name="desc_collection__remove">Removes the given **`item`** from the given **`collection`** (`Array`, `List`, or `Set`). Returns a `Boolean` value indicating if removing succeeded.</string>
+
+    <string name="desc_array__remove">Removes the given **`item`** from the given **`array`** (an `Array`). Returns a `Boolean` value indicating if removing succeeded.</string>
+
+    <string name="desc_list__remove">Removes the given **`item`** from the given **`list`** (a `List`). Returns a `Boolean` value indicating if removing succeeded.</string>
+
+    <string name="desc_set__remove">Removes the given **`item`** from the given **`set`** (a `Set`). Returns a `Boolean` value indicating if removing succeeded.</string>
+
+    <string name="desc_conj_0">Returns a new `List` by adding the given **`item`** to the given **`collection`** which is `List`or `Array`.</string>
+
+    <string name="desc_conj_1">Returns a new `Set` by adding the given **`item`** to the given **`set`**.</string>
+
+    <string name="desc_cons_0">Returns a new `List` where **`item`** is the first element and the given **`sequence`** (a `Sequence`) is the rest.</string>
+
+    <string name="desc_cons_1">Returns a new `List` where **`item`** is the first element and the given **`string`** (a `String`) is the rest.</string>
+
+    <string name="desc_cons_2">Returns a new `List` where **`item`** is the first element and the given **`set`** (a `Set`) is the rest.</string>
+
+    <string name="desc_string__drop">Returns a new `String` of all but the first **`n`** items in the given **`string`**.</string>
+
+    <string name="desc_string__drop_last">Returns a new `String` of all but the last **`n`** items in the given **`string`**.</string>
+
+    <string name="desc_split_lines">Splits the given **`string`** to an `Array` of substrings based on line break characters.</string>
+
+    <string name="desc_is_empty_0">Returns true if the given **`collection`** is empty.</string>
+
+    <string name="desc_is_empty_1">Returns true if the given **`string`** is empty (contains no characters).</string>
+
+    <string name="desc_is_not_empty_0">Returns true if the given **`collection`** is not empty.</string>
+
+    <string name="desc_is_not_empty_1">Returns true if the given **`string`** is not empty (contains no characters).</string>
+
+    <string name="desc_collection__size">Returns the size of the given **`collection`** (a `Collection`).</string>
+
+    <string name="desc_string__size">Returns the size of the given **`string`** (a `String`).</string>
+
+    <string name="desc_string__ends_with">Tests if the **`string`** ends with the specified **`postfix`**.</string>
+
+    <string name="desc_starts_with">Tests if the **`string`** starts with the specified **`prefix`**.</string>
+
+    <string name="desc_bit_and">Performs a bitwise *and* comparison of corresponding bits of **`number1`** and **`number2`**. Returns an `Int` or `Long`.</string>
+
+    <string name="desc_bit_not">Inverts the bits of the given **`number`** value. Returns an `Int` or `Long`.</string>
+
+    <string name="desc_number__inv">Inverts the bits of the given **`number`** value. Returns an `Int` or `Long`.</string>
+
+    <string name="desc_bit_or">Performs a bitwise *or* comparison of corresponding bits of of **`number1`** and **`number2`**. Returns an `Int` or `Long`.</string>
+
+    <string name="desc_number__shl">Signed shift left. Shifts the bit pattern of the given **`number`** to the left by **`n`** number of specified bits, and zero bits are shifted into the low-order positions. Returns an `Int` or `Long`.</string>
+
+    <string name="desc_number__shr">Signed shift right. Shifts the bit pattern of the given **`number`** to the right by **`n`** number of specified bits. Returns an `Int` or `Long`.</string>
+
+    <string name="desc_number__ushr">Unsigned shift right. Shifts the bit pattern of the given **`number`** to the right by **`n`** number of specified bits. Returns a `Int` or `Long`.</string>
+
+    <string name="desc_bit_xor">Performs a bitwise *xor* comparison of corresponding bits of **`number1`** and **`number2`**. Returns an `Int` or `Long`.</string>
+
+    <string name="desc_sequence__filter">Returns a `List` containing the items from the given **`collection`** for which the **`predicate`** function evaluates to *logical true* (i.e. `true` or not `Null`.</string>
+
+    <string name="desc_set__filter">Returns a `List` containing the items from the given **`set`** for which the **`predicate`** function evaluates to *logical true* (i.e. `true` or not `Null`.</string>
+
+    <string name="desc_any__boolean">Tests if the given **`object`** is a `Boolean`.</string>
+
+    <string name="desc_any__is_byte">Tests if the given **`object`** is a `Byte`.</string>
+
+    <string name="desc_sequence__first">Returns the first item in the given **`sequence`** which may not be empty.</string>
+
+    <string name="desc_string__first">Returns the first character int the given **`string`** which may not be empty.</string>
+
+    <string name="desc_not">Returns `false` if the given **`object`** evaluates to *logical true*, otherwise `true`.</string>
+
+    <string name="desc_last_0">Returns the last item in the given **`sequence`** which may not be empty.</string>
+
+    <string name="desc_last_1">Returns the last item in the given **`string`** which may not be empty.</string>
+
+    <string name="desc_format">Formats the string evaluated from **`object`** using the given **`formatArgs`**. Eg. `(format \"Hello %1s\" \"World!\")`.</string>
+
+    <string name="desc_print">Prints the given **`object`** to system output as literal. Given **`formatArgs`** are applied as formatting args if the **`object`** evaluates to a format string.</string>
+
+    <string name="desc_println">Prints the given **`object`** to system output as literal with a new line. Given **`formatArgs`** are applied as formatting args if the **`object`** evaluates to a format string.</string>
+
+    <string name="desc_sequence__rest">Returns a copy of the given **`sequence`** that does not contain the first item of it.</string>
+
+    <string name="desc_string__rest">Returns a copy of the given **`string`** that does not contain the first character of it.</string>
+
+    <string name="desc_string__replace_char">Replaces all the occurrences of the given **`oldChar`** with **`newChar`** in the given **`string`**.</string>
+
+    <string name="desc_string__replace_first_regex_0">Replaces the first occurrence of the substring matching the specified regular expression with the **`replacement`** in the given **`string`**. The regular expression is defined by the given **`regex`** given as a `Regex`.</string>
+
+    <string name="desc_string__replace_first_regex_1">Replaces the first occurrence of the substring matching the specified regular expression with the **`replacement`** in the given **`string`**. The regular expression is defined by the given **`regex`** given as a `String`.</string>
+
+    <string name="desc_string__replace_first_string">Replaces the first occurrence of the specified **`substring`** in the **`string`** with the given **`replacement`**.</string>
+
+    <string name="desc_string__replace_regex">Replaces all the occurrences of the substring matching the specified regular expression with the **`replacement`** in the given **`string`**. The regular expression is defined by the given **`regex`** given as a `Regex`.</string>
+
+    <string name="desc_replace_re_1">Replaces all the occurrences of the substring matching the specified regular expression with the **`replacement`** in the given **`string`**. The regular expression is defined by the given **`regex`** given as a `String`.</string>
+
+    <string name="desc_string__replace">Replaces all the occurrences of the specified **`substring`** in the **`string`** with the given **`replacement`**.</string>
+
+    <string name="desc_split_0">Splits the given **`string`** around matches of the given regular expression defined by the `Regex` based **`regex`** argument. Resulting substrings are returned as an `Array`.</string>
+
+    <string name="desc_split_1">Splits the given **`string`** around matches of the given regular expression defined by the `String` based **`regex`** argument. Resulting substrings are returned as an `Array`.</string>
+
+    <string name="desc_split_2">Splits the given **`string`** around matches of the given regular expression defined by the `Regex` based **`regex`** argument. Resulting substrings are returned as an `Array`. Argument **`limit`** specifies the maximum number of substrings returned.</string>
+
+    <string name="desc_split_3">Splits the given **`string`** around matches of the given regular expression defined by the `String` based **`regex`** argument. Resulting substrings are returned as an `Array`. Argument **`limit`** specifies the maximum number of substrings returned.</string>
+
+    <string name="desc_matches_0">Return `true` if the given regular expression matches the given **`string`**, otherwise **`false`**. The regular expression is defined as a `Regex`.</string>
+
+    <string name="desc_matches_1">Return `true` if the given regular expression matches the given **`string`**, otherwise **`false`**. The regular expression is defined as a `String`.</string>
+
+    <string name="desc_number__is_negative">Tests if the given **`number`** is negative.</string>
+
+    <string name="desc_log">Computes the logarithm of the value **`x`** to the given **`base`**.</string>
+
+    <string name="desc_json_get_0">Gets the property with **`key`** from the given **`json`** object. Value `Null` is returned if property with **`key`** is not found. Use forward slash separated keys to define a path for nested properties e.g. \"employees/developers/Mike\"</string>
+
+    <string name="desc_json_get_1">Gets the property with **`key`** from the given **`json`** object. The given **`fallback`** is returned if property with **`key`** is not found. Use forward slash separated keys to define a path for nested properties e.g. \"employees/developers/Mike\"</string>
+
+    <string name="desc_get_0">Gets the property with **`key`** from a **`json`**. Value `Null` is returned if property with **`key`** is not found. Use forward slash separated keys to define a path for nested properties e.g. \"employees/developers/Mike\"</string>
+
+    <string name="desc_get_1">Gets the property with **`key`** from a **`json`**. The given **`fallback`** is returned if property with **`key`** is not found. Use forward slash separated keys to define a path for nested properties e.g. \"employees/developers/Mike\"</string>
+
+    <string name="desc_get_2">Gets the property with **`key`** from a **`map`**. Value `Null` is returned if property with **`key`** is not found.</string>
+
+    <string name="desc_get_3">Gets the property with **`key`** from a **`map`**. The given **`fallback`** is returned if property with **`key`** is not found.</string>
+
+    <string name="desc_map__get_0">Gets the value for the given **`key`** in the **`map`** (a `Map`). Returns the item or **`Null`** if the **`key`** has no assigned value.</string>
+
+    <string name="desc_map__get_1">Gets the value for the given **`key`** in the **`map`** (a `Map`). Returns the **`fallback`** if the **`key`** has no assigned value.</string>
+
+    <string name="desc_json__get_0">Gets the property for the given **`key`** in the **`json`** (a `JSONObject`). Returns the property or **`Null`** if the JSON does not contain a property with **`key`**.</string>
+
+    <string name="desc_json__get_1">Gets the property for the given **`key`** in the **`json`** (a `JSONObject`). Returns the **`fallback`** if the JSON does not contain a property with **`key`**.</string>
+
+    <string name="desc_string__index_of">Gets the index of the specified **`substring`** in the given **`string`**. Searching starts from the specified start **`index`**. Returns `-1` if the **`substring`** is not found.</string>
+
+    <string name="desc_any__is_double">Tests if the given **`object`** is instance of `Double`.</string>
+
+    <string name="desc_number__is_even">Tests if the given **`number`** is even.</string>
+
+    <string name="desc_number__is_odd">Tests if the given **`number`** is odd.</string>
+
+    <string name="desc_number__is_positive">Tests if the given **`number`** is positive.</string>
+
+    <string name="desc_number__sign">Returns the sign of the given value **`number`**: `-1` if the value is negative, `0` if the value is zero, and `1`if the value is positive.</string>
+
+    <string name="desc_parse_string">Parses a form from the given **`string`**.</string>
+
+    <string name="desc_string__parse_eval">Parses the **`literal`** `String` to a form and evaluates the form.</string>
+
+    <string name="desc_string__is_empty">Checks if the given **`string`** is empty.</string>
+    <string name="desc_string__is_not_empty">Checks if the given **`string`** is not empty.</string>
+    <string name="desc_string__length">Returns the length of the given **`string`**.</string>
+
+    <string name="desc_compile">Returns a `ParsedForm` which parses given the **`literal`** `String` and caches the resulting form. Whenever the `ParsedForm` is evaluated it does not need to parse the literal, but evaluates the cached form instead.</string>
+
+    <string name="desc_str">Converts the given **`object`** values to `String` values and concatenates them to a single `String`.</string>
+
+    <string name="desc_string__concatenate">Converts the given **`object`** values to `String` values and concatenates them into a single `String`.</string>
+
+    <string name="desc_tail">Returns a copy of the given **`string`** that contains the last **`n`** characters of it.</string>
+
+    <string name="desc_any__is_set">Tests if the given **`object`** is instance of `Set`.</string>
+
+    <string name="desc_any__is_string">Tests if the given **`object`** is instance of `String`.</string>
+
+    <string name="desc_observer__subscribe">Subscribes the given **`observer`** `Callback` to receive callback invocations from the given **`observable`**. Returns a `Subscription` which can be used for cancelling the subscription.</string>
+
+    <string name="desc_subscription__unsubscribe">Unsubscribes the given **`subscription`**. Returns the `Observable` which originally created the **`subscription`** object.</string>
+
+    <string name="desc_timer_observable">Creates and returns a `TimerObservable` with the given expiration
+        **`period`** (in milliseconds) parameters.
+        `TimerObservable` is a single shot timer which, when expired, invokes the subscribed observer function or procedure
+        having a signature `(timeNow:Long)`. The timer needs to be started using function `(subscription .start))`.
+        Other observing control functions are: `(subscription .pause))`, `(subscription .resumne))`, and
+        `(subscription .stop))`. The last function also unsubscribes the observer from observing
+    the `TimerObservable`.</string>
+
+    <string name="desc_periodic_timer_observable">Creates and returns a `PeriodicTimerObservable` with the given
+        **`initialDelay`** (in milliseconds) and update **`period`** (in milliseconds) parameters.
+        `TimeObservable` starts periodically invoking the subscribed observer function or procedure
+        having a signature `(timeNow:Long timeSinceStart:Long)` once the subscription to it
+        activated using function `(subscription .start)`. Other observing control
+        functions are: `(subscription .pause)`, `(subscription .resume)`, and
+        `(subscription .stop)`. The last function also unsubscribes the observer from observing the `PeriodicTimerObservable`.</string>
+
+    <string name="desc_subscription__start">Start observing the `Observable` specified in the given **`subscription`**.</string>
+
+    <string name="desc_subscription__pause">Pauses observing the `Observable` specified in the given **`subscription`**.</string>
+
+    <string name="desc_subscription__resume">Resumes observing the `Observable` specified in the given **`subscription`**.</string>
+
+    <string name="desc_subscription__stop">Stops observing the `Observable` specified in the given **`subscription`**. The observer is also unsubscibed from the `Observable`.</string>
+
+    <string name="desc_subarray_0">Returns the subarray of **`array`** beginning at **`start`** inclusive, and ending at the length of array, exclusive.</string>
+
+    <string name="desc_subarray_1">Returns the subarray of **`array`** beginning at **`start`** inclusive, and ending at **`end`**, exclusive.</string>
+
+    <string name="desc_substring_0">Returns the substring of **`string`** beginning at **`start`** inclusive, and ending at the length of string, exclusive.</string>
+
+    <string name="desc_substring_1">Returns the substring of **`string`** beginning at **`start`** inclusive, and ending at **`end`** (defaults to length of string), exclusive.</string>
+
+    <string name="desc_contains_0">Returns `true` if the given **`string`** contains the specified **`substring`**, otherwise `false`.</string>
+
+    <string name="desc_contains_1">Returns `true` if the given **`string`** contains the specified **`substring`**, otherwise `false`. Argument **`caseIsIgnored`** specifies whether matching is case insensitive (`true`) or sensitive (`false`).</string>
+
+    <string name="desc_is_symbol">Tests if the given **`object`** is instance of `Symbol`.</string>
+
+    <string name="desc_string__repeat">Repeat the **`string`** for **`n`** times.</string>
+
+    <string name="desc_rand">Gives a rand double number between 0.0 – 1.0</string>
+
+    <string name="desc_date">Gives the current date.</string>
+
+    <string name="desc_date_year">Returns the year represented by the given **`date`**.</string>
+
+    <string name="desc_date_month">Returns the month represented by the given **`date`**.</string>
+
+    <string name="desc_date_day_of_month">Returns the day of month represented by the given **`date`**.</string>
+
+    <string name="desc_date_hours">Returns the hour represented by the given **`date`**.</string>
+
+    <string name="desc_date_minutes">Returns the number of minutes past the current hour represented by the given **`date`**.</string>
+
+    <string name="desc_date_seconds">Returns the number of seconds past the current minute represented by the given **`date`**.</string>
+
+    <string name="desc_date_milliseconds">Returns the number of milliseconds past the current second represented by the given **`date`**.</string>
+
+    <string name="desc_epoch_time">The epoch time as milliseconds.</string>
+
+    <string name="desc_any__is_long">Test if the given **`object`** is instance of `Long`.</string>
+
+    <string name="desc_sequence__get">Returns the item at the location specified by **`index`** in the given **`sequence`** (e.g. `Array` or `List`).</string>
+
+    <string name="desc_string__char_at">Returns the `Char` at the location specified by **`index`** in the given **`string`**.</string>
+
+    <string name="desc_not_equals">Returns `true` if the given **`object`** arguments do not equal with each other, otherwise `false`.</string>
+
+    <string name="desc_any__is_list">Tests if the given **`object`** is instance of `List`.</string>
+
+    <string name="desc_any__is_json_array">Tests if the given **`object`** is instance of `JsonArray`.</string>
+
+    <string name="desc_any__is_json_element">Tests if the given **`object`** is instance of `JsonElement`.</string>
+
+    <string name="any__desc_is_json_object">Tests f the given **`object`** is instance of `JsonObject`.</string>
+
+    <string name="desc_any__is_json_primitive">Tests if the given **`object`** is instance of `JSonPrimitive`.</string>
+
+    <string name="desc_any__is_map">Tests if the given **`object`** is instance of `Map`</string>
+
+    <string name="desc_any__is_false">Tests if the given **`object`** is *logical false* (i.e. `false` or `Null`).</string>
+
+    <string name="desc_any__is_null">Tests if the given **`object`** is `Null`.</string>
+
+    <string name="desc_any__is_not_null">Tests if the given **`object`** is not `Null`.</string>
+
+    <string name="desc_string__butlast"> Returns a copy of the given **`string`** without the last **`n`** characters. Returns an empty `String` if **`n`** is greater than the length of **`string`**.</string>
+
+    <string name="desc_string__capitalize">Returns a copy of the given **`string`** having its first letter upper cased, or the original **`string`**, if it is empty or already starts with an upper case letter.</string>
+
+    <string name="desc_string__chop">Creates a copy of the given **`string`** where the last character of it is removed.</string>
+
+    <string name="desc_string__reverse">Reverses the characters in the given **`string`**.</string>
+
+    <string name="desc_string__lower_case">Creates a copy of the given **`string`** where all the characters of it are lower cased.</string>
+
+    <string name="desc_string__take">Returns a sub sequence of the given **`string`** containing only max **`n`** first characters of the original `String`.</string>
+
+    <string name="desc_tan">Returns the tan of the given **`x`**.</string>
+
+    <string name="desc_to_boolean">Converts the given **`object`** to `Boolean`.</string>
+
+    <string name="desc_number__to_byte">Converts a **`number`** to **`Byte`**.</string>
+
+    <string name="desc_string__to_byte">Converts a **`string`** to **`Byte`**.</string>
+
+    <string name="desc_json__to_byte">Converts a **`jsonPrimitive`** to **`Byte`**.</string>
+
+    <string name="desc_any__to_char">Converts a **`object`** to `Char`.</string>
+
+    <string name="desc_json__to_char">Converts a **`jsonPrimitive`** to `Char`.</string>
+
+    <string name="desc_number__to_double">Converts a **`number`** to `Double`.</string>
+
+    <string name="desc_string__to_double">Converts a **`string`** to `Double`.</string>
+
+    <string name="desc_json__to_double">Converts a **`jsonPrimitive`** to `Double`.</string>
+
+    <string name="desc_number__to_float">Converts a **`number`** to `Float`.</string>
+
+    <string name="desc_string__to_float">Converts a **`string`** to `Float`.</string>
+
+    <string name="desc_json__to_float">Converts a **`jsonPrimitive`** to `Float`.</string>
+
+    <string name="desc_number__to_int">Converts a **`number`** to `Int`. </string>
+
+    <string name="desc_string__to_int">Converts a **`string`** to `Int`. </string>
+
+    <string name="desc_json__to_int">Converts a **`jsonPrimitive`** to `Int`. </string>
+
+    <string name="desc_string__to_json">Converts a **`string`** **`JsonObject`**. </string>
+
+    <string name="desc_map__to_json">Converts a **`map`** to **`JsonObject`**. </string>
+
+    <string name="desc_to_array">Converts the given **`object`** to `Array`.</string>
+
+    <string name="desc_any__to_list">Converts the given **`object`** to `List`.</string>
+
+    <string name="desc_any__to_map">Converts the given **`json`** to `Map`.</string>
+
+    <string name="desc_any__to_set">Converts the given **`object`** to `Set`.</string>
+
+    <string name="desc_number__to_long">Converts a **`number`** to `Long`.</string>
+
+    <string name="desc_string__to_long">Converts a **`string`** to `Long`.</string>
+
+    <string name="desc_json__to_long">Converts a **`jsonPrimitive`** to `Long`.</string>
+
+    <string name="desc_number__to_number">Converts a **`number`** to `Number`.</string>
+
+    <string name="desc_string__to_number">Converts a **`string`** to `Number`.</string>
+
+    <string name="desc_json__to_number">Converts a **`jsonPrimitive`** to `Number`.</string>
+
+    <string name="desc_number__to_short">Converts a **`number`** to `Short`.</string>
+
+    <string name="desc_string__to_short">Converts a **`string`** to `Short`.</string>
+
+    <string name="desc_json__to_short">Converts a **`jsonPrimitive`** to `Short`.</string>
+
+    <string name="desc_any__to_string">Converts the given **`object`** to a `String` representation.</string>
+
+    <string name="desc_string__trim">Returns a sub sequence of the given **`string`** having leading and trailing white space characters removed.</string>
+
+    <string name="desc_string__trimStart">Returns a sub sequence of the given **`string`** having leading white space characters removed.</string>
+
+    <string name="desc_string__trimEnd">Returns a sub sequence of the given **`string`** having trailing white space characters removed.</string>
+
+    <string name="desc_any__is_true">Tests if the given **`object`** evaluates to *logical true* (i.e. `true` or not `Null`).</string>
+
+    <string name="desc_upper_case">Creates a copy of the given **`string`** where all the characters of it are upper cased.</string>
+
+    <string name="desc_number__is_zero">Tests if the given **`number`** is zero.</string>
+
+    <string name="desc_and">Evaluates **`object`** arguments one by one, from left to
+        right. If a **`object`** evaluates to *logical false* (i.e. `false` or `Null`) then `false`
+        is returned and remaining **`object`** arguments are not evaluated, otherwise `true` is
+        returned. If no **`object`** arguments are given, returns `true`.</string>
+
+    <string name="desc_or">Evaluates all the given **`object`** arguments one by one, from left to
+        right. If a **`object`** evaluates to *logical true* value (i.e. `true` or not `Null`),
+        returns `true` and remaining **`object`** arguments are not evaluated.  If no **`object`**
+        evaluates to logical true, returns a `false`. If no **`object`** arguments are given, returns
+        `false`"</string>
+
+    <string name="desc_xor">Evaluates **`object`** arguments one by one, from left to
+        right.  If only one **`object`** evaluates to *logical true* (i.e. `true` or not `Null`) value,
+        returns `true`.  If more than one **`object`** or none of them evaluates to logical true
+        returns `false`. If no **`object`** arguments are given, returns `false`.</string>
+
+    <string name="desc_assoc">Returns a new `Map` with the given **`key`** and **`value`** pairs associated in the **`map`**.</string>
+
+    <string name="desc_map__put">Returns a new `Map` with the given **`key`** and **`value`** associated in the **`map`**.</string>
+
+    <string name="desc_dissoc">Returns a new `Map` with the given **`key`** arguments removed from the **`map`**.</string>
+
+    <string name="desc_map__remove_key">Returns a new `Map` with the given **`key`** removed from the **`map`**.</string>
+
+    <string name="desc_merge">Returns a new `Map` combining the entries of the given **`map`** arguments from left to right.</string>
+
+    <string name="desc_map__keys">Returns an `Array` containing all keys of the given **`map`**.</string>
+
+    <string name="desc_json__keys">Returns an `Array` containing all property keys of the given **`json`** object.</string>
+
+    <string name="desc_map__values">Returns an `Array` containing all values of the given **`map`**.</string>
+
+    <string name="desc_json__values">Returns an `Array` containing all property values of the given **`json`** object.</string>
+
+    <string name="desc_map__contains_key">Returns `true` if the given **`map`** contains the specified **`key`**, otherwise `false`.</string>
+
+    <string name="desc_json__contains_key">Returns `true` if the given **`json`** object contains the specified **`key`**, otherwise `false`.</string>
+
+    <string name="desc_sequence__set_at">Returns a new `Sequence` (`Array` or `List`) with the item at **`index`** in **`sequence`** replaced by **`value`**.</string>
+
+    <string name="desc_sequence__remove_at">Returns a new `Sequence` (`Array` or `List`) with the item at **`index`** removed from **`sequence`**.</string>
+
+    <string name="desc_sequence__insert_at">Returns a new `Sequence` (`Array` or `List`) with **`value`** inserted at **`index`** in **`sequence`**.</string>
+
+    <string name="desc_assoc_in">Returns a copy of the nested **`collection`** with the value at **`path`** (a slash-separated string like `\"a/0/b\"` or a sequence of keys/indices) replaced by **`value`**.</string>
+
+    <string name="desc_update_in">Returns a copy of the nested **`collection`** with the value at **`path`** (a slash-separated string like `\"a/0/b\"` or a sequence of keys/indices) transformed by applying **`function`** to the current value.</string>
+
+    <string name="desc_clamp">Clamps the given **`value`** to the inclusive range [**`min`**, **`max`**].</string>
+
+    <string name="desc_rand_int_0">Returns a random integer (`Long`) between `0` (inclusive) and **`max`** (exclusive).</string>
+
+    <string name="desc_rand_int_1">Returns a random integer (`Long`) between **`min`** (inclusive) and **`max`** (exclusive).</string>
+
+    <string name="desc_rand_choice">Returns a randomly chosen element from the given **`sequence`** or **`set`**, or `Null` if it is empty.</string>
+
+    <string name="desc_shuffle">Returns a new `Array` with the elements of the given **`sequence`** or **`set`** in random order.</string>
+
+    <string name="desc_atan2">Returns the angle `theta` in radians from the conversion of rectangular coordinates (**`x`**, **`y`**) to polar coordinates (`r`, `theta`).</string>
+
+    <string name="desc_hypot">Returns the Euclidean norm `sqrt(x² + y²)` (or `sqrt(x² + y² + z²)` when **`z`** is provided) without intermediate overflow or underflow.</string>
+
+    <string name="desc_reduce_0">Accumulates the elements of **`collection`** from left to right using the binary **`function`**, starting with the first element (returns `Null` if empty).</string>
+
+    <string name="desc_reduce_1">Accumulates the elements of **`collection`** from left to right using the binary **`function`**, starting with **`initialValue`**.</string>
+
+    <string name="desc_sequence__find">Returns the first element in **`collection`** for which **`predicate`** evaluates to *logical true*, or `Null` if none matches.</string>
+
+    <string name="desc_sequence__index_of_0">Returns the index of the first occurrence of **`item`** in **`sequence`**, or `-1` if not found.</string>
+
+    <string name="desc_sequence__index_of_1">Returns the index of the first occurrence of **`item`** in **`sequence`** starting at **`index`**, or `-1` if not found.</string>
+
+    <string name="desc_string__index_of_0">Returns the index within the given **`string`** of the first occurrence of the specified **`substring`**, or `-1` if not found.</string>
+
+    <string name="desc_sequence__any">Returns `true` if **`predicate`** evaluates to *logical true* for at least one element of **`collection`**, otherwise `false`.</string>
+
+    <string name="desc_sequence__all">Returns `true` if **`predicate`** evaluates to *logical true* for all elements of **`collection`**, otherwise `false`.</string>
+
+    <string name="desc_sequence__count">Returns the number of elements in **`collection`** for which **`predicate`** evaluates to *logical true*.</string>
+
+    <string name="desc_sequence__sort">Returns a new `Sequence` with the elements of **`collection`** sorted in ascending order.</string>
+
+    <string name="desc_sequence__sort_by">Returns a new `Sequence` with the elements of **`collection`** sorted in ascending order by the key returned by **`keyFn`** (a function, keyword, or key string).</string>
+
+    <string name="desc_sequence__reverse">Returns a new `Sequence` with the elements of **`sequence`** in reverse order.</string>
+
+    <string name="desc_sequence__take">Returns a new `Sequence` containing the first **`n`** elements of **`sequence`**.</string>
+
+    <string name="desc_sequence__drop">Returns a new `Sequence` containing all but the first **`n`** elements of **`sequence`**.</string>
+
+    <string name="desc_sequence__drop_last">Returns a new `Sequence` containing all but the last **`n`** elements of **`sequence`**.</string>
+
+    <string name="desc_sequence__distinct">Returns a new `Sequence` containing the distinct elements of **`collection`**, preserving first-seen order.</string>
+
+    <string name="desc_sequence__group_by">Groups the elements of **`collection`** into a `Map` of `Array`s keyed by the result of **`keyFn`** (a function, keyword, or key string).</string>
+
+    <string name="desc_range_0">Returns an `Array` of integers from `0` (inclusive) to **`end`** (exclusive).</string>
+
+    <string name="desc_range_1">Returns an `Array` of integers from **`start`** (inclusive) to **`end`** (exclusive).</string>
+
+    <string name="desc_range_2">Returns an `Array` of integers from **`start`** (inclusive) to **`end`** (exclusive) advancing by **`step`**.</string>
+
+    <string name="desc_sequence__sum">Returns the sum of all numbers in **`collection`** (`0` if empty).</string>
+
+    <string name="desc_sequence__average">Returns the arithmetic mean (`Double`) of all numbers in **`collection`** (`0.0` if empty).</string>
+
+    <string name="desc_sequence__join_0">Joins the elements of **`collection`** into a single `String`.</string>
+
+    <string name="desc_sequence__join_1">Joins the elements of **`collection`** into a single `String` separated by **`separator`**.</string>
+
+</resources>

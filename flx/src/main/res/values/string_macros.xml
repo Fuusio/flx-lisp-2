@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="desc_assign">Assigns the given **`value`** to a **`variable`**.</string>
+
+    <string name="desc_fun">Defines a new function with the given **`name`** symbol, zero or more **`args`** for function arguments, and a function **`body`** form. Each arg is defined as a `Symbol`</string>
+
+    <string name="desc_constructor">Defines a new object constructor with the given **`name`** symbol, zero or more **`args`** for constructor arguments, and a constructor **`body`** form. Each arg is defined as a `Symbol`</string>
+
+    <string name="desc_method">Defines a new object method with the given **`name`** symbol, zero or more **`args`** for method arguments, and a method **`body`** form. Each arg is defined as a `Symbol`</string>
+
+    <string name="desc_proc">Defines a new procedure with the given **`args`** array and **`code`**.</string>
+
+    <string name="desc_callback">Creates a new `Callback` with the given **`code`** and optional callback **`parameters`**. Each parameter is defined as a `Symbol`. Each callback parameter can be referenced in the callbacks\'s code.</string>
+
+    <string name="desc_http_callback">Creates a new `HttpCallback` with the given **`code`**. A `HttpCallback` instance has an implicit parameter `response` that can be referenced as in the callbacks\'s code. The parameter has type `HttpResult`.</string>
+
+    <string name="desc_beanshell">Executes the given Beanshell **`script`** and returns the result. Given **`variables`**, where each variable is a `var` `Symbol`, are used to pass input values to script, and to receive output values from the script execution.</string>
+
+    <string name="desc_fn">Defines a new anonymous function with zero or more **`args`** and a function **`body`**. Each arg is defined as a `Symbol`.</string>
+
+    <string name="desc_code">Creates an instance of `Code` object. Code is a code block that contains zero or more forms. Each given **`form`** is executed one by one in the given order. Returns the evaluated value of the last executed **`form`**.</string>
+
+    <string name="desc_do">Executes each **`form`** one by one in the given order. Returns the evaluated value of the last executed **`form`**.</string>
+
+    <string name="desc_for">Implements a for loop which executes the **`form`** for **`start`** to **`end`** indices. Both arguments **`start`** and **`end`** has to evaluate to a `Number`.</string>
+
+    <string name="desc_repeat">Executes the given **`form`** for **`n`** times. Argument **`n`** has to evaluate to a `Number`.</string>
+
+    <string name="desc_for_each">Iterates over the elements in the **`sequence`** and on each iteration assigns the next element to the **`symbol`** before evaluating the given **`form`**.</string>
+
+    <string name="desc_help">Shows help for the function with the name specified by the given **`symbol`**.</string>
+
+    <string name="desc_control_flow_if_else">If the **`condition`** evaluates to `true` then **`trueBranch`** is executed, otherwise **`falseBranch`**. Returns the value of the evaluated form.</string>
+
+    <string name="desc_control_flow_if">If the **`condition`** evaluates to `true` then **`trueBranch`** is executed and the value from evaluation is returned.</string>
+
+    <string name="desc_let">Performs the value assignments defined in **`bindings`** and executes each **`form`** one by one. E.g. **`(let [x 1 y 2] (+ x y)  (* x y)`**. The value of the last executed form is returned.</string>
+
+    <string name="desc_map">Returns a `List` consisting of the results of applying the given **`function`** on the set of nth items (0, 1, , … N) of each **`sequence`**.</string>
+
+    <string name="desc_quote">Returns the given **`form`** without evaluating it.</string>
+
+    <string name="desc_lazy">Returns the given **`form`** without evaluating it. A lazy form can be evaluated later on with `(eval form)` function.</string>
+
+    <string name="desc_val">Creates an immutable value with the given **`symbol`** name and assigns the given **`value`** for it.</string>
+
+    <string name="desc_var">Creates an mutable variable with the given **`symbol`** name and assigns the optional **`value?`** for it.</string>
+
+    <string name="desc_when">When function returns the evaluated value of **`form`** for the first **`condition`** that evaluates to value `true`.</string>
+
+    <string name="desc_when_with_argument">When function returns the evaluation result of the **`form`** for which the **`case`** value equals to the given **`argument`** value. If no equal case value exists, the evaluated value of `else` form is returned.</string>
+
+    <string name="desc_while">Implements a while loop. First, the **`condition`** expression is evaluated, and if the result is true, then the **`form`** is evaluated.</string>
+
+    <string name="desc_loop">Binds **`bindings`** like `let` and evaluates each **`form`**. If the last form evaluates to **`(recur value*)`**, the bindings take those values and the forms are evaluated again, without using more stack. E.g. **`(loop [i 0 sum 0] (if-else (> i 10) sum (recur (+ i 1) (+ sum i))))`**.</string>
+
+    <string name="desc_recur">Evaluates each **`form`** and restarts the enclosing `loop`, or the enclosing function, with the results as its new binding or parameter values. Must be the value the loop or function body returns (tail position).</string>
+
+    <string name="desc_decrease">Decreases the number value of **`variable`** by 1</string>
+
+    <string name="desc_increase">Increases the number value of **`variable`** by 1</string>
+
+    <string name="desc_thread_first">Threads **`value`** as the first argument through each **`form`** in sequence.</string>
+
+    <string name="desc_thread_last">Threads **`value`** as the last argument through each **`form`** in sequence.</string>
+
+    <string name="desc_coalesce">Evaluates arguments one by one and returns the first non-`nil` value, or `nil` if all are `nil`.</string>
+
+    <string name="desc_if_let">Evaluates the binding in **`bindings`** `[symbol expr]` and, if the value is non-`nil` and not `false`, binds `symbol` and evaluates **`trueBranch`**; otherwise evaluates **`falseBranch`** (or returns `nil`).</string>
+
+    <string name="desc_when_let">Evaluates the binding in **`bindings`** `[symbol expr]` and, if the value is non-`nil` and not `false`, binds `symbol` and evaluates each **`body`** **`form`**, returning the last value; otherwise returns `nil`.</string>
+
+    <string name="desc_toggle">Negates the boolean value of **`variable`** in place (`(= variable (not variable))`) and returns the new value.</string>
+
+    <string name="desc_add_assign">Adds **`value`** to **`variable`** in place (`(= variable (+ variable value))`) and returns the new value.</string>
+
+    <string name="desc_sub_assign">Subtracts **`value`** from **`variable`** in place (`(= variable (- variable value))`) and returns the new value.</string>
+
+    <string name="desc_update_bang">Updates **`variable`** in place by applying **`function`** to its current value and any additional **`args`** (`(= variable (function variable args...))`), returning the new value.</string>
+
+    <string name="desc_try_or">Evaluates **`form`** and returns its result, or evaluates and returns **`fallback`** (or `nil` if omitted) if an error occurs.</string>
+
+    <string name="desc_try">Evaluates **`body`** forms and returns the last result. If an error occurs and a trailing `(catch err handler...)` form is present, binds `err` to the error message and evaluates `handler` forms; otherwise returns `nil`.</string>
+
+</resources>
