@@ -10,7 +10,7 @@
 
 ---
 
-FLX is a Lisp dialect implemented in pure Kotlin. Embed it in an Android app to script your app,
+FLX Lisp is a Lisp dialect implemented in pure Kotlin. Embed it in an Android app to script your app,
 let users write small programs, or explore Lisp interactively. The repository contains the FLX
 library and a demo app with an interactive REPL.
 
