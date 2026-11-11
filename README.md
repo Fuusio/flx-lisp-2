@@ -151,6 +151,15 @@ See [RELEASING.md](RELEASING.md) for how the library is published, and
 Issues and pull requests are welcome at
 [github.com/Fuusio/flx-lisp-2](https://github.com/Fuusio/flx-lisp-2).
 
+## Built with FLX Lisp: the Fuusio app
+
+**[Fuusio](https://play.google.com/store/apps/details?id=org.fuusio.app)** 
+is a full-blown, production Android app using FLX and published on Google Play. 
+It provides a Lisp REPL and a visual editor for building small applications with UI.
+
+[![Get it on Google Play](https://img.shields.io/badge/Google_Play-Fuusio-414141?logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=org.fuusio.app)
+
+
 ## License
 
 Copyright © 2016 - 2026 Marko Salmela
@@ -162,3 +171,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
 implied. See the License for the specific language governing permissions and limitations under the
 License.
+
+## Support my Open Source projects
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K7E224O35X)
