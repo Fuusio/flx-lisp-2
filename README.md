@@ -37,21 +37,23 @@ library and a demo app with an interactive REPL.
 
 (val numbers (range 1 6))
 
-(println (map square numbers))        ; prints [1 4 9 16 25]
+(println (map square numbers))        ;; prints (1 4 9 16 25)
 
-(reduce + (map square numbers))       ; => 55
+(reduce + (map square numbers))       ;; => 55
 
-(-> 3 (+ 4) (* 2))                    ; => 14
+(-> 3 (+ 4) (* 2))                    ;; => 14
 
-(filter [1 2 3 4] .isEven)            ; => [2 4]
+(filter [1 2 3 4] .isEven)            ;; => (2 4)
 
-(map :name [{:name "A"} {:name "B"}]) ; => ["A" "B"]
+(map :name [{:name "A"} {:name "B"}]) ;; => ("A" "B")
 
-(try-or (/ 10 0) 0)                   ; => 0
+(try-or (/ 10 0) 0)                   ;; => 0
 
 (loop [i 0 sum 0]
-  (if-else (> i 10) sum (recur (+ i 1) (+ sum i))))  ; => 55
+  (if-else (> i 10) sum (recur (+ i 1) (+ sum i))))  ;; => 55
 ```
+
+FLX comments start with two semicolons (`;;`).
 
 ## Project structure
 
@@ -69,6 +71,12 @@ The demo app has a navigation drawer with these screens:
   clear and reset actions.
 - **Settings:** the theme (Light, Dark or System).
 - **About:** version, contact and open-source licenses.
+
+## Documentation
+
+The [FLX Lisp reference](docs/reference/flx-reference.md) documents the language and the whole built-in library:
+syntax and literals, evaluation rules, every built-in macro and function with its signature and description,
+deprecated names, and known quirks. It lives in [`docs/reference`](docs/reference).
 
 ## Getting started
 
