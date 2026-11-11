@@ -3,6 +3,7 @@ package org.fuusio.flx.app
 import android.app.Application
 import org.fuusio.flx.app.feature.about.AboutFeature
 import org.fuusio.flx.app.feature.flx_info.FlxInfoFeature
+import org.fuusio.flx.app.feature.flx_reference.FlxReferenceFeature
 import org.fuusio.flx.app.feature.repl.FlxReplFeature
 import org.fuusio.flx.app.feature.settings.SettingsFeature
 import org.fuusio.kide.log.KideLog
@@ -51,6 +52,7 @@ class FlxApplication : Application() {
         FlxApplicationFeature.koinModule(applicationContext),
         FlxInfoFeature.koinModule(applicationContext),
         FlxReplFeature.koinModule(applicationContext),
+        FlxReferenceFeature.koinModule(applicationContext),
         SettingsFeature.koinModule(applicationContext),
         AboutFeature.koinModule(applicationContext),
     )
@@ -58,6 +60,7 @@ class FlxApplication : Application() {
     private fun initializeFeatures() {
         FlxInfoFeature.initialize()
         FlxReplFeature.initialize()
+        FlxReferenceFeature.initialize()
         SettingsFeature.initialize()
         AboutFeature.initialize()
     }

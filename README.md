@@ -55,6 +55,18 @@ library and a demo app with an interactive REPL.
 
 FLX comments start with two semicolons (`;;`).
 
+## Screenshots
+
+<table>
+  <tr>
+    <td><img src="docs/screenshots/screen_flx_info.png" width="200" alt="FLX Info"></td>
+    <td><img src="docs/screenshots/screen_flx_repl_1.png" width="200" alt="FLX REPL"></td>
+    <td><img src="docs/screenshots/screen_flx_repl_2.png" width="200" alt="FLX REPL, results"></td>
+    <td><img src="docs/screenshots/screen_flx_reference.png" width="200" alt="FLX Reference"></td>
+    <td><img src="docs/screenshots/screen_flx_navigation_drawer.png" width="200" alt="Navigation drawer"></td>
+  </tr>
+</table>
+
 ## Project structure
 
 | Module | Description |
@@ -69,6 +81,7 @@ The demo app has a navigation drawer with these screens:
 - **FLX Info:** an introduction to FLX, with a link to this repository.
 - **FLX REPL:** an interactive read-eval-print loop with command history, examples, and copy,
   clear and reset actions.
+- **FLX Reference:** the reference document in a WebView that follows the selected theme.
 - **Settings:** the theme (Light, Dark or System).
 - **About:** version, contact and open-source licenses.
 
@@ -77,6 +90,8 @@ The demo app has a navigation drawer with these screens:
 The [FLX Lisp reference](docs/reference/flx-reference.md) documents the language and the whole built-in library:
 syntax and literals, evaluation rules, every built-in macro and function with its signature and description,
 deprecated names, and known quirks. It lives in [`docs/reference`](docs/reference).
+The demo app shows the same document as HTML; after editing the Markdown, run
+`python3 docs/reference/build_reference_html.py` to regenerate `app/src/main/assets/flx-reference.html`.
 
 ## Getting started
 

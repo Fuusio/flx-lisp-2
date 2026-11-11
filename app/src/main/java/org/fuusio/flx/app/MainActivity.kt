@@ -43,6 +43,7 @@ import org.fuusio.flx.app.domain.entity.ThemeMode
 import org.fuusio.flx.app.domain.usecase.GetThemeModeFlowUseCase
 import org.fuusio.flx.app.feature.about.navigation.AboutNavKey
 import org.fuusio.flx.app.feature.flx_info.navigation.FlxInfoNavKey
+import org.fuusio.flx.app.feature.flx_reference.navigation.FlxReferenceNavKey
 import org.fuusio.flx.app.feature.repl.navigation.FlxReplNavKey
 import org.fuusio.flx.app.feature.settings.navigation.SettingsNavKey
 import org.fuusio.flx.app.ui.compose.HorizontalSpacer
@@ -104,6 +105,7 @@ private fun drawerItems(): List<NavItem> {
         listOf(
             NavItem(FlxInfoNavKey, resources.getString(R.string.label_drawer_item_flx_info), R.drawable.info_24px),
             NavItem(FlxReplNavKey, resources.getString(R.string.label_drawer_item_flx_repl), R.drawable.terminal_2_24px),
+            NavItem(FlxReferenceNavKey, resources.getString(R.string.label_drawer_item_flx_reference), R.drawable.book_24px),
             NavItem(SettingsNavKey(), resources.getString(R.string.label_drawer_item_settings), R.drawable.settings_24px),
             NavItem(AboutNavKey, resources.getString(R.string.label_drawer_item_about), R.drawable.mobile_info_24px),
         )
@@ -139,7 +141,10 @@ private fun FlxApp() {
 
     ModalNavigationDrawer(
         drawerState = drawerState,
-        gesturesEnabled = isAtTopLevel,
+        // The reference scrolls its page, and its wide code blocks and tables scroll sideways: the
+        // edge swipe would open the drawer in the middle of that. There the menu icon opens it, and
+        // an open drawer can still be swiped shut.
+        gesturesEnabled = isAtTopLevel && (currentKey != FlxReferenceNavKey || drawerState.isOpen),
         drawerContent = {
             ModalDrawerSheet {
                 Row(
