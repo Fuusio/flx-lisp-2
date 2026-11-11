@@ -30,6 +30,10 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -46,7 +50,9 @@ import androidx.compose.ui.platform.ClipEntry
 import androidx.compose.ui.platform.LocalClipboard
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -94,6 +100,11 @@ private fun FlxReplScreenContent(
     val listState = rememberLazyListState()
     val clipboard = LocalClipboard.current
     val scope = rememberCoroutineScope()
+    // The field's text is the state's source; the selection is only the screen's, for the symbol bar.
+    var field by remember { mutableStateOf(TextFieldValue(state.source, TextRange(state.source.length))) }
+    LaunchedEffect(state.source) {
+        if (state.source != field.text) field = TextFieldValue(state.source, TextRange(state.source.length))
+    }
     LaunchedEffect(state.transcript.size) {
         if (state.transcript.isNotEmpty()) listState.animateScrollToItem(state.transcript.lastIndex)
     }
@@ -133,8 +144,8 @@ private fun FlxReplScreenContent(
                 }
             }
             OutlinedTextField(
-                value = state.source,
-                onValueChange = { onDispatch(SourceChanged(it)) },
+                value = field,
+                onValueChange = { field = it; onDispatch(SourceChanged(it.text)) },
                 modifier = Modifier.fillMaxWidth().heightIn(max = 160.dp).onPreviewKeyEvent { event ->
                     if (event.key == Key.Enter && !event.isShiftPressed && !event.isCtrlPressed &&
                         !event.isAltPressed && !event.isMetaPressed
@@ -199,6 +210,15 @@ private fun FlxReplScreenContent(
                     Icon(painterResource(R.drawable.content_copy_24px), stringResource(R.string.repl_copy_console))
                 }
             }
+            LispSymbolBar(
+                onSymbolClick = { symbol ->
+                    field = insertLispSymbol(field, symbol)
+                    onDispatch(SourceChanged(field.text))
+                },
+                onCaretLeft = { field = moveCaretLeft(field) },
+                onCaretRight = { field = moveCaretRight(field) },
+                enabled = !state.running,
+            )
             if (state.running) LinearProgressIndicator(Modifier.fillMaxWidth())
         }
     }

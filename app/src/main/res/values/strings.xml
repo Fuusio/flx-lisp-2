@@ -19,4 +19,6 @@
     <string name="repl_copy_console">Copy</string>
     <string name="repl_previous">Previous command</string>
     <string name="repl_next">Next command</string>
+    <string name="repl_caret_left">Move caret left</string>
+    <string name="repl_caret_right">Move caret right</string>
 </resources>
