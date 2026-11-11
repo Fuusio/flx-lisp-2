@@ -31,6 +31,15 @@ import org.fuusio.flx.core.vm.Ctx
  */
 abstract class FunctionFormSymbol(name: String) : Symbol(name), SystemSymbol {
 
+    /**
+     * Set once any scope binds this name — `(fun sum …)`, a parameter called `min`. Calls of the
+     * built-in then check whether the name is bound where they run, and call the binding instead;
+     * until then they skip that check.
+     */
+    @JvmField
+    @Volatile
+    var isShadowed = false
+
     override fun get(ctx: Ctx): Any {
         val value = ctx.get(this)
         // Null is also what a variable explicitly set to null holds; only an unbound name falls back.

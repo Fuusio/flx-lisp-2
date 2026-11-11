@@ -21,6 +21,7 @@ import org.fuusio.flx.Program
 import org.fuusio.flx.core.*
 import org.fuusio.flx.core.error.FlxException
 import org.fuusio.flx.core.error.ImmutableSymbolException
+import org.fuusio.flx.core.function.FunctionFormSymbol
 import org.fuusio.flx.core.type.Color
 
 open class Ctx(
@@ -145,6 +146,7 @@ open class Ctx(
      */
     fun bindSlots(names: Array<Symbol>, values: Array<Any>) {
         if (names.isEmpty()) return
+        for (name in names) if (name is FunctionFormSymbol) name.isShadowed = true
         slotNames = names
         slotValues = values
     }
@@ -253,6 +255,7 @@ open class Ctx(
             slotValues!![slot] = assignment.get()
             return
         }
+        if (symbol is FunctionFormSymbol) symbol.isShadowed = true
         val bindings = assignments ?: HashMap<String, Assignment>(INITIAL_BINDINGS_CAPACITY).also { assignments = it }
         bindings[symbol.name] = assignment
     }

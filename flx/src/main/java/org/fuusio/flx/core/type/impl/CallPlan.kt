@@ -31,6 +31,7 @@ import org.fuusio.flx.core.isFalse
 import org.fuusio.flx.core.isTrue
 import org.fuusio.flx.core.FunctionFormSpec
 import org.fuusio.flx.core.function.DefinedFunction
+import org.fuusio.flx.core.function.FunctionFormSymbol
 import org.fuusio.flx.core.function.FunctionSpec
 import org.fuusio.flx.core.function.FunctionSymbol
 import org.fuusio.flx.core.macro.LetBindings
@@ -261,6 +262,18 @@ internal sealed class CallPlan {
             }
     }
 
+    /**
+     * A call whose head is a built-in's symbol: [plan] runs it, unless the program has bound that
+     * name — `(fun sum [a b] …)` — where the call runs, in which case the binding is called, as it
+     * would be for any other name. The check costs one flag read until some scope binds the name.
+     */
+    class Shadowable(private val head: FunctionFormSymbol, private val plan: CallPlan, argForms: Array<Any>) : CallPlan() {
+        private val named = Named(head, argForms)
+
+        override fun eval(ctx: Ctx, form: ImmutableList): Any =
+            if (head.isShadowed && ctx.isBound(head)) named.eval(ctx, form) else plan.eval(ctx, form)
+    }
+
     /** A form in head position, such as `((fn [x| x) 1)`: evaluated first, then called. */
     class Computed(private val head: List, private val argForms: Array<Any>) : CallPlan() {
         // A copy: Evaluator.eval may evaluate the forms in place in the array it is given.
@@ -293,6 +306,11 @@ internal sealed class CallPlan {
             if (elements.isEmpty()) return SelfEvaluating
             val head = elements[0]
             val argForms = if (elements.size == 1) Ctx.emptyArgs else Array(elements.size - 1) { i -> elements[i + 1] }
+            val plan = builtinPlan(head, argForms)
+            return if (head is FunctionFormSymbol) Shadowable(head, plan, argForms) else plan
+        }
+
+        private fun builtinPlan(head: Any, argForms: Array<Any>): CallPlan {
             return when (head) {
                 is FunctionSymbol -> when (head.functionSpec) {
                     FunctionSpec.AND -> ShortCircuit(isAnd = true, argForms)
