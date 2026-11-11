@@ -315,7 +315,7 @@ private val OSI_LIBRARIES: List<OsiLibrary> = listOf(
             OSILicense.APACHE_2.licenseText,
     ),
     OsiLibrary(
-        name = "FLX Lisp",
+        name = "FLX Lisp 2",
         copyright = "Copyright © 2016 - 2026 Marko Salmela",
         license = OSILicense.APACHE_2,
         githubUrl = FlxLinks.GITHUB_URL,
