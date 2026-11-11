@@ -76,7 +76,7 @@ FLX is published on Maven Central. Add the dependency to your module's `build.gr
 
 ```kotlin
 dependencies {
-    implementation("org.fuusio.flx:flx:2.0.0")
+    implementation("org.fuusio.flx:flx:2.0.3")
 }
 ```
 
@@ -143,8 +143,7 @@ Requirements:
 
 ## Releasing
 
-See [RELEASING.md](RELEASING.md) for how the library is published, and
-[CHANGELOG.md](CHANGELOG.md) for what changed in each version.
+See [CHANGELOG.md](CHANGELOG.md) for what changed in each version.
 
 ## Contributing
 

@@ -3,7 +3,16 @@
 All notable changes to the FLX Lisp library are documented in this file. The project follows
 [Semantic Versioning](https://semver.org/).
 
-## [2.0.2] - Unreleased
+## [2.0.3] - 2026-11-11
+
+### Fixed
+
+- A function or parameter that a program defines with the name of a built-in function, such as
+  `(fun sum [a b] (+ a b))` or a parameter called `min`, is now called instead of the built-in.
+  Calls written before the definition reach it too, and a parameter shadows the built-in only
+  inside its own function. Built-ins work as before when nothing shadows them.
+
+## [2.0.2] - 2026-11-11
 
 First public release on Maven Central as `org.fuusio.flx:flx`.
 
@@ -13,4 +22,5 @@ First public release on Maven Central as `org.fuusio.flx:flx`.
 - Functions, closures, `loop`/`recur`, threading macros, `try`/`catch` and objects.
 - No reflection: FLX programs cannot load classes or call Java methods that FLX does not define.
 
-[2.0.1]: https://github.com/Fuusio/flx-lisp-2/releases/tag/v2.0.1
+[2.0.3]: https://github.com/Fuusio/flx-lisp-2/releases/tag/v2.0.3
+[2.0.2]: https://github.com/Fuusio/flx-lisp-2/releases/tag/v2.0.2
